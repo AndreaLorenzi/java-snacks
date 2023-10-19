@@ -9,9 +9,16 @@ public class Snack4 {
         //chiedo all'utente di inserire una parola
         System.out.print("Inserisci una parola: ");
         String parola = scanner.nextLine();
+        String palindrome = "";
 
-        
-        //chiudo lo scanner
+        for (int i = parola.length() - 1; i >= 0; i--) {
+            palindrome += parola.charAt(i);
+        }
+        if (parola.equals(palindrome)) {
+            System.out.println("La parola è palindroma");
+        } else {
+            System.out.println("la parola non è palindroma");
+        }
         scanner.close();
     }
 }
