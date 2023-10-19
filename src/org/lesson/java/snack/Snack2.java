@@ -15,7 +15,7 @@ public class Snack2 {
         for (int i = 0; i < 10; i++) {
             String nomeCasuale = nomi[random.nextInt(nomi.length)];
             String cognomeCasuale = cognomi[random.nextInt(cognomi.length)];
-            System.out.println(nomeCasuale + " " + cognomeCasuale);
+            System.out.println((i + 1) + ")" + "Invitato: " + nomeCasuale + " " + cognomeCasuale + ".");
         }
     }
 }
